@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());  
 
-mongoose.connect('mongodb+srv://msarazuac:%4015042001Masc@cluster0.5egbzs9.mongodb.net/', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://daniel:danny12345@cluster0.hffdnqw.mongodb.net/test', { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         console.log('Conexión exitosa');
     })
