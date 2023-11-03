@@ -89,7 +89,7 @@ exports.loginUser = async (req, res) => {
 
 exports.getProfile = async (req, res) => {
   try {
-    const user = await User.findOne({ DPI: req.params.DPI });
+    const user = await User.findOne({ CorreoElectronico: req.params.CorreoElectronico });
     if (!user)
       return res.status(404).json({ Mensaje: "No se encontró el usuario." });
     res.json(user);
